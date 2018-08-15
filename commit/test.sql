@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Aug 15, 2018 at 01:50 AM
+-- Generation Time: Aug 15, 2018 at 02:00 AM
 -- Server version: 5.7.17-log
 -- PHP Version: 5.6.30
 
@@ -27,16 +27,19 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `test` (
-  `af` int(11) NOT NULL
+  `id` int(11) NOT NULL,
+  `prices` int(11) NOT NULL,
+  `stock` int(11) NOT NULL,
+  `dates` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `test`
 --
 
-INSERT INTO `test` (`af`) VALUES
-(100),
-(100);
+INSERT INTO `test` (`id`, `prices`, `stock`, `dates`) VALUES
+(0, 0, 0, 0),
+(0, 0, 0, 0);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
